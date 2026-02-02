@@ -1,0 +1,19 @@
+{
+  "name": "claw-stats",
+  "version": "1.0.0",
+  "description": "GitHub stats CLI for agents — track stars, forks, and progress across repos",
+  "main": "index.js",
+  "bin": {
+    "claw-stats": "./index.js"
+  },
+  "scripts": {
+    "test": "node index.js --help"
+  },
+  "keywords": ["github", "stats", "cli", "agent", "stars", "repos"],
+  "author": "Julian Thorne",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/julianthorne2jz/claw-stats"
+  }
+}
