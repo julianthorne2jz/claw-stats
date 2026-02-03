@@ -65,7 +65,7 @@ claw-todo                 ⭐   0        🍴  0
 
 | Flag | Description |
 |------|-------------|
-| `-j, --json` | Output JSON |
+| `-j, --human, -H    Human-readable output (default: JSON) |
 | `-d, --diff` | Show changes since last run |
 | `-s, --sort <field>` | Sort by: stars, forks, updated |
 | `-h, --help` | Show help |

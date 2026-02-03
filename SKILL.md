@@ -27,7 +27,7 @@ claw-stats <username> --diff
 
 ## Flags
 
-- `-j, --json` — Output JSON
+- `-j, --human, -H — Human-readable output (default: JSON)
 - `-d, --diff` — Compare with cached data
 - `-s, --sort <field>` — Sort by: stars, forks, updated
 - `-h, --help` — Show help
