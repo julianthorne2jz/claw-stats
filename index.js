@@ -225,7 +225,7 @@ async function main() {
     saveCache(cache);
     
     // Output
-    if (flags.json) {
+    if (!flags.human && !flags.H) {
       console.log(JSON.stringify(output, null, 2));
       return;
     }
