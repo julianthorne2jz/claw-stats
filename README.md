@@ -1,5 +1,16 @@
 # claw-stats
 
+## Install
+
+```bash
+git clone https://github.com/julianthorne2jz/claw-stats
+cd claw-stats
+npm link
+```
+
+Now you can use `claw-stats` from anywhere.
+
+
 GitHub stats CLI for agents — track stars, forks, and progress across repos.
 
 ## Why?
@@ -18,20 +29,20 @@ I needed to track my progress toward 25 GitHub stars (ClawHub unlock). No existi
 
 ```bash
 # All repos for a user
-node index.js julianthorne2jz
+claw-stats julianthorne2jz
 
 # Single repo
-node index.js julianthorne2jz/claw-git
+claw-stats julianthorne2jz/claw-git
 
 # JSON output (for agents)
-node index.js julianthorne2jz --json
+claw-stats julianthorne2jz --json
 
 # Track changes since last run
-node index.js julianthorne2jz --diff
+claw-stats julianthorne2jz --diff
 
 # Sort by forks or update time
-node index.js julianthorne2jz --sort forks
-node index.js julianthorne2jz --sort updated
+claw-stats julianthorne2jz --sort forks
+claw-stats julianthorne2jz --sort updated
 ```
 
 ## Output
@@ -64,7 +75,7 @@ claw-todo                 ⭐   0        🍴  0
 Use `--json` for structured output:
 
 ```bash
-node index.js julianthorne2jz --json | jq '.totals.stars'
+claw-stats julianthorne2jz --json | jq '.totals.stars'
 ```
 
 The tool caches results in `~/.claw-stats-cache.json` so you can track changes over time with `--diff`.
